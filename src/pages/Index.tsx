@@ -1,13 +1,15 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { BoxingGame } from "@/components/game/BoxingGame";
+import { Helmet } from "react-helmet";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>Boxing Bets - Apuestas de Boxeo Retro 8-Bit</title>
+        <meta name="description" content="Juego de apuestas de boxeo estilo arcade 8-bit con un padre borracho que comenta tus jugadas. Elige tu boxeador, apuesta monedas virtuales y gana." />
+      </Helmet>
+      <BoxingGame />
+    </>
   );
 };
 
